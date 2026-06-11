@@ -10,9 +10,9 @@ The core technical focus of this project is data normalization and logical simul
 
 The initial source data consisted of unstructured, concatenated text strings. To process this, a comprehensive data cleaning pipeline was engineered natively within Excel:
 
-1. **String Cleansing:** Implemented nested text functions to programmatically remove delimiters, irregular whitespace, and non-numeric characters.
-2. **Pattern Extraction:** Isolated critical data points (dates, time logs, and kWh energy usage) from complex text blocks.
-3. **Data Standardization:** Converted the raw string inputs into a strict, structured tabular format suitable for financial modeling.
+1. Implemented nested text functions to programmatically remove delimiters, irregular whitespace, and non-numeric characters.
+2. Isolated critical data points (dates, time logs, and kWh energy usage) from complex text blocks.
+3. Converted the raw string inputs into a strict, structured tabular format suitable for financial modeling.
 
 ![Data Cleaning Process](cleaning_process.png)
 Transformation pipeline from raw data input strings to structured columns.
