@@ -1,35 +1,32 @@
-# 📊 Energy Cost Optimization Model
+# Energy Cost Optimization Model
 
-### 📌 Project Objective
-This project analyzes annual energy consumption to determine the most cost-effective electricity plan among three options: Fixed, Monthly, and Hourly rates. The goal is to identify savings opportunities based on real consumption patterns.
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) 
 
----
+This project is a financial modeling and data analysis tool designed to optimize annual energy consumption costs. It evaluates real-world consumption patterns to determine the most cost-effective electricity tariff among three structural options: Fixed, Monthly, and Hourly rates.
 
-### 🧩 The Challenge: Data Transformation
-The source data consisted of non-structured text strings. I developed a comprehensive **Data Cleaning Pipeline** in Excel to normalize the information:
+The core technical focus of this project is data normalization and logical simulation. It demonstrates how raw, unstructured text can be processed into a structured dataset to feed a financial calculation engine and drive business intelligence decisions.
 
-1.  **String Cleansing:** Used nested functions to remove delimiters, irregular spaces, and non-numeric characters.
-2.  **Pattern Extraction:** Isolated dates, times, and energy usage (kWh) from complex text blocks.
-3.  **Data Standardization:** Converted raw text into a structured format ready for financial modeling.
+## Data Transformation Pipeline
+
+The initial source data consisted of unstructured, concatenated text strings. To process this, a comprehensive data cleaning pipeline was engineered natively within Excel:
+
+1. **String Cleansing:** Implemented nested text functions to programmatically remove delimiters, irregular whitespace, and non-numeric characters.
+2. **Pattern Extraction:** Isolated critical data points (dates, time logs, and kWh energy usage) from complex text blocks.
+3. **Data Standardization:** Converted the raw string inputs into a strict, structured tabular format suitable for financial modeling.
 
 ![Data Cleaning Process](cleaning_process.png)
-*(Preview: Transformation from `Raw Data Input` to structured columns)*
+Transformation pipeline from raw data input strings to structured columns.
 
----
+## Financial Modeling & Logic
 
-### 🔧 Financial Modeling & Logic
-Once the data was clean, I built a calculation engine to simulate the costs under three different pricing structures using logical functions and matrix lookups.
+With the structured dataset, a calculation engine was built to simulate operational costs under the three distinct pricing structures. The architecture utilizes nested logical functions and matrix lookups to dynamically apply tariff rates based on the specific time and volume of consumption.
 
 ![Cost Calculation Model](cost_calculation_model.png)
-*(Financial model comparing the three tariff scenarios)*
+Financial model comparing the three tariff structure scenarios based on cleaned consumption data.
 
----
+## Key Insights & Dashboard
 
-### 📈 Key Insights & Dashboard
-The analysis revealed that the **Hourly Plan** is the most profitable option for this user, offering the lowest annual cost. This is because the user's highest consumption occurs during off-peak hours when electricity is cheapest ($0.10 - $0.12/kWh).
+The final output is an executive dashboard that synthesizes the calculation engine's results. The analysis conclusively identified the Hourly Plan as the most profitable option. The data revealed a specific consumption pattern where the user's highest energy draw occurs during off-peak hours, aligning perfectly with the lowest dynamic rate brackets ($0.10 - $0.12/kWh).
 
 ![Dashboard Preview](dashboard_electricity.png)
-*(Executive Dashboard with final recommendation)*
-
-### 🧠 Conclusion
-This project demonstrates how technical data cleaning is the foundation of business intelligence. Converting "dirty" data into a structured model allows for precise operational cost optimization.
+Executive dashboard visualizing consumption patterns and final cost optimization recommendation.
